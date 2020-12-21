@@ -41,3 +41,17 @@ $ docker run -it --rm lamhuynhb779/swarm-run-service:dotnet
 
 ## Push image into repository in Dockerhub
 $ docker push lamhuynhb779/swarm-run-service:dotnet
+
+# SERVICE PHP
+
+## RUN app PHP
+$ php -S 0.0.0.0:8085 index.php
+
+## Build image
+$ docker build -t lamhuynhb779/swarm-run-service:php .
+
+## Test run container
+$ docker run -it --rm lamhuynhb779/swarm-run-service:php
+
+## Push repo
+$ docker push lamhuynhb779/swarm-run-service:php
