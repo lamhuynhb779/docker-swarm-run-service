@@ -1,0 +1,8 @@
+// Build image
+$ docker build -t lamhuynhb779/swarm-run-service:php .
+
+// Test
+$ docker run -it --rm lamhuynhb779/swarm-run-service:php
+
+// Push repo
+$ docker push lamhuynhb779/swarm-run-service:php
