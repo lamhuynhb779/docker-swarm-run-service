@@ -1,0 +1,12 @@
+Step 1:
+Create docker-compose file
+
+Step 2:
+Configuration docker-compose
+
+Step 3:
+Copy file docker-compose to node manager
+$ docker-machine scp docker-compose.yml vps1:/home/
+
+Step 4:
+$ docker stack deploy --compose-file docker-compose.yml <stack-name>
