@@ -1,4 +1,5 @@
-## RUN app node
+# SERVICE NODEJS
+# RUN app node
 $ cd .\node\
 $ node app.js
 
@@ -14,10 +15,9 @@ $ docker run -it --rm lamhuynhb779/swarm-run-service:node
 ## Push image into repository in Dockerhub
 $ docker push lamhuynhb779/swarm-run-service:node
 
-######
-
-## Run app dotnet
-# Prerequisites
+# SERVICE .NET
+# Run app dotnet
+## Prerequisites
 Install the following:
     .NET Core SDK. The SDK also includes the Runtime. (https://dotnet.microsoft.com/download)
     The C# extension from the VS Code Marketplace. (https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)
@@ -30,7 +30,7 @@ $ dotnet new web
 $ dotnet run
 
 ## Build source .NET into path ..\bin\Debug\netcoreapp3.1\publish\
-# To copy builded source at this folder into docker image
+## To copy builded source at this folder into docker image
 $ dotnet publish
 
 ## Build source to image
