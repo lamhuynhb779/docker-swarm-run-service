@@ -3,6 +3,8 @@ version: "3.7"
 services: 
   service1:
     image: lamhuynhb779/swarm-run-service:php
+    networks: 
+      - net1
     ports:
       - 8085:8085
     deploy: 
@@ -19,6 +21,8 @@ services:
 
   service2:
     image: lamhuynhb779/swarm-run-service:dotnet
+    networks: 
+      - net2
     ports:
       - 8086:8085
     deploy: 
@@ -32,3 +36,9 @@ services:
           memory: 50MB
       restart_policy:
         condition: on-failure 
+networks:
+  net1:
+  # If you dont define then it will use default network overlay
+  net2:
+    driver: overlay
+    name: www-net2
